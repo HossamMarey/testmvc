@@ -1,0 +1,32 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Authors</h1>
+        <ul class="list-group">
+          <% authors.forEach( au => { %>
+          <li
+            class="list-group-item mb-1 d-flex justify-content-between align-items-center"
+          >
+            <span> <%= au.name %> </span>
+            <span>
+              <a href="" class="btn btn-info">Edit</a>
+              <a href="" class="btn btn-danger">Delete</a>
+            </span>
+          </li>
+          <li
+            class="list-group-item mb-1"
+          >
+            <form action="" method="post">
+              <div class="form-group d-flex justify-content-between align-items-center">
+                <input type="text" value="Hossam" name="Hossam" class="form-control col-10 col-md-8"/>
+                <a href="" class="btn btn-info">save</a>
+              </div>
+            </form>
+          </li>
+          <% }) %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
